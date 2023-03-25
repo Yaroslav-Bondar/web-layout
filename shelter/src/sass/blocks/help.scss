@@ -1,0 +1,15 @@
+.help {
+  background-color: $color-white;
+  &__container {
+    padding: 78px 0 99px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center
+  }
+  &__goods {
+    @include flex-center-h;
+    flex-wrap: wrap;
+    gap: 47px 119px;
+  }
+}

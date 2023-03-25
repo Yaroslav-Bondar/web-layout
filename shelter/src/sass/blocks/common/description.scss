@@ -1,0 +1,11 @@
+.description {
+  @include font-arial-regular;
+  font-size: 15px;
+  line-height: 160%;
+  &_color_dark-xl {
+    color: $color-dark-xl;
+  }
+  &_color_dark-s {
+    color: $color-dark-s;
+  }
+}

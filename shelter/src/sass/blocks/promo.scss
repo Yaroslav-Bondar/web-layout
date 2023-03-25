@@ -1,0 +1,34 @@
+.promo {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  &__content {
+      margin-top: 162px;
+      width: 460px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $color-white;
+  }
+  &__description {
+    margin-top: 42px;
+  }
+  &__button {
+    margin-top: 43px;
+  }
+  &__img {
+    width: 698px;
+    height: 728px;
+  }
+  &__img-item {
+  }
+}
+

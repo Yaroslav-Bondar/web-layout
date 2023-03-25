@@ -1,0 +1,13 @@
+// utils
+@use "sass:map";
+// settings
+@import "_config/variables";
+@import '_config/fonts';
+
+// mixins
+@import '_mixins/media';
+@import '_mixins/container';
+@import '_mixins/alignment';
+
+// sections
+@import 'blocks/**/*.scss';

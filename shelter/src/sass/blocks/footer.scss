@@ -1,0 +1,44 @@
+.footer {
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 160px;
+    padding-top: 39px;
+  }
+  &__address {
+    display: grid;
+    grid-template-areas: 'title-contact title-location'
+                          'email marker-1'
+                          'phone marker-2';
+    grid-template-columns:  283px 296px;
+    gap: 40px 161px;
+    padding-bottom: 58px;
+  }
+  &__title {
+    &[data-grid-area = 'title-contact'] {
+      grid-area: title-contact;
+    }
+    &[data-grid-area = 'title-location'] {
+      grid-area: title-location;
+    }
+  }
+  &__info {
+    &[data-grid-area = 'email'] {
+      grid-area: email;
+    }
+    &[data-grid-area = 'phone'] {
+      grid-area: phone;
+    }
+    &[data-grid-area = 'marker-1'] {
+      grid-area: marker-1;
+    }
+    &[data-grid-area = 'marker-2'] {
+      grid-area: marker-2;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: end;
+  }
+}

@@ -1,0 +1,7 @@
+.header {
+    &__container {
+        @include flex-center-v;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+}

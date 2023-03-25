@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: $font-family-base;
+  font-style: $font-style-base;
+  font-weight: $font-weight-base;
+}
+.wrapper {
+  @include wrapper;
+}
+.container {
+  @include container;
+}

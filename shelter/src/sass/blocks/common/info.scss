@@ -1,0 +1,16 @@
+.info {
+  @include flex-center-v;
+  &__icon {
+    margin-right: 20px;
+  }
+  &__text {
+    @include font-georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    &_link {
+    text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.credit-card {
+  display: inline-block;
+  padding: 10px 15px 10px 60px;
+  border-radius: 9px;
+  background-color: $color-primary;
+  text-decoration: none;
+  background: 15px / 30px 23px no-repeat url('/assets/img/icons/credit-card.png'), $color-primary;
+  &__text {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,14 @@
+.pets {
+  background-color: $color-light-l;
+  &__container {
+    padding: 80px 0 100px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__button {
+    @include flex-center-h;
+    margin-top: 60px;
+  }
+}
