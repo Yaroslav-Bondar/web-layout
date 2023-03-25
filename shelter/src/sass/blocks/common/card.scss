@@ -5,6 +5,15 @@
   text-align: center;
   background-color: $color-light-s;
   border-radius: 9px;
+  transition-property: opacity transform;
+  transition-duration: .3s;
+  cursor: pointer;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: translateY(-10px) scale(1.07);
+  }
   &__img {
   }
   &__img-item {

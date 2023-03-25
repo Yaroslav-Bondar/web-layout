@@ -6,8 +6,9 @@
   }
   &__item {
   }
-  &__prev,
-  &__next {
+  // &__prev,
+  // &__next 
+  &__btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -16,14 +17,34 @@
     @extend %reset-button;
     border: 2px solid $color-primary;
     border-radius: 50%;
+    transition-property: opacity background-color border-color;
+    transition-duration: 0.2s;
+    &:active {
+      opacity: 0.8;
+    }
   }
-  &__next {
-    right: 0;
-    background: center no-repeat url('/assets/img/icons/arrow-next.png');
-  }
-  &__prev {
+  &__btn_theme_normal-prev {
     left: 0;
     background: center no-repeat url('/assets/img/icons/arrow-prev.png');
+    &:hover {
+      border-color: $color-primary-light;
+      background: center no-repeat url('/assets/img/icons/arrow-prev.png'), $color-primary-light;
+    }
   }
+  &__btn_theme_normal-next {
+    right: 0;
+    background: center no-repeat url('/assets/img/icons/arrow-next.png');
+    &:hover {
+      border-color: $color-primary-light;
+      background: center no-repeat url('/assets/img/icons/arrow-next.png'), $color-primary-light;
+    }
+  }
+  &__btn_theme_inactive-next {
+
+  }
+  // &__prev {
+  //   left: 0;
+  //   background: center no-repeat url('/assets/img/icons/arrow-prev.png');
+  // }
 }
 

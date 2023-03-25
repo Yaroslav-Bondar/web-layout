@@ -10,7 +10,16 @@
     letter-spacing: 0.06em;
     color: $color-primary;
     &_link {
-    text-decoration: none;
+      text-decoration: none;
+      transition-property: opacity color;
+      transition-duration: .2s;
+      &:hover {
+        color: $color-white;
+      }
+      &:active {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
     }
   }
 }

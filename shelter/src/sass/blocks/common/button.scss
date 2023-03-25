@@ -3,12 +3,24 @@
   padding: 15px 45px;
   text-decoration: none;
   border-radius: 100px;
+  transition-property: opacity background-color border-color;
+  transition-duration: .2s;
+  &:active {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+  &:hover {
+    background-color: $color-primary-light;
+  }
   &_theme_primary {
     background-color: $color-primary;
   }
   &_theme_secondary {
     background-color: transparent;
-    border: 2px solid #F1CDB3;
+    border: 2px solid $color-primary;
+    &:hover {
+      border-color: $color-primary-light;
+    }
   }
   &__text {
     font-size: 17px;

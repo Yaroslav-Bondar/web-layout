@@ -17,6 +17,7 @@
     transition-property: color opacity;
     transition-duration: .2s;
     &:active:not(.nav__link_active) {
+      text-decoration: underline;
       opacity: 0.8;
     }
     &_color_dark-s {

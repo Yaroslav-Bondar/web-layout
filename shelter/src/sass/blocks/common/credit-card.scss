@@ -5,6 +5,15 @@
   background-color: $color-primary;
   text-decoration: none;
   background: 15px / 30px 23px no-repeat url('/assets/img/icons/credit-card.png'), $color-primary;
+  transition-property: opacity background-color;
+  transition-duration: 0.2s;
+  &:hover {
+    background: 15px / 30px 23px no-repeat url('/assets/img/icons/credit-card.png'), $color-primary-light;
+  }
+  &:active {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
   &__text {
     font-size: 20px;
     line-height: 115%;
