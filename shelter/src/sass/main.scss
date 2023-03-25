@@ -9,5 +9,8 @@
 @import '_mixins/container';
 @import '_mixins/alignment';
 
+// extends
+@import '_extends/reset';
+
 // sections
 @import 'blocks/**/*.scss';

@@ -1,7 +1,8 @@
 .help {
   background-color: $color-white;
   &__container {
-    padding: 78px 0 99px 0;
+    padding-top: 78px;
+    padding-bottom: 99px;
   }
   &__title {
     margin-bottom: 60px;

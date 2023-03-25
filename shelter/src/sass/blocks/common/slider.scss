@@ -1,0 +1,29 @@
+.slider {
+  position: relative;
+  &__container {
+    @include flex-center-h;
+    column-gap: 90px;
+  }
+  &__item {
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    @extend %reset-button;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+  }
+  &__next {
+    right: 0;
+    background: center no-repeat url('/assets/img/icons/arrow-next.png');
+  }
+  &__prev {
+    left: 0;
+    background: center no-repeat url('/assets/img/icons/arrow-prev.png');
+  }
+}
+
