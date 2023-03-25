@@ -13,8 +13,7 @@
     }
   }
   &__subtitle {
-    font-family: 'Arial';
-    font-weight: 400;
+    @include font-arial-regular;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;

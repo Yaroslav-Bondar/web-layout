@@ -7,8 +7,8 @@
 // @include font-face('Montserrat', '/font/montserrat/semibold/montserrat-semibold', 600);
 // @include font-face('Montserrat', '/font/montserrat/medium/montserrat-medium', 500);
 @include font-face('Georgia', '/assets/font/georgia/regular/georgia-regular', 400);
-@include font-face('Arial', '/assets/font/arial/regular/arial-regular', 400);
-@include font-face('Arial', '/assets/font/arial/italic/arial-italic-regular', 400);
+@include font-face("'arial-regular', sans-serif", '/assets/font/arial/regular/arial-regular', 400);
+@include font-face("'arial-italic', sans-serif", '/assets/font/arial/italic/arial-italic-regular', 400);
 
 // @include font-face('Montserrat', '/font/montserrat/light/montserrat-light', 300);
 
@@ -39,12 +39,12 @@
     font-style: normal;
 }
 @mixin font-arial-regular {
-    font-family: 'Arial';
+    font-family: 'arial-regular', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 @mixin font-arial-italic-regular {
-    font-family: 'Arial';
+    font-family: 'arial-italic', sans-serif;
     font-weight: 400;
     font-style: italic;
 }
