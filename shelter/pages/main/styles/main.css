@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "'georgia-regular', sans-serif;";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/georgia/regular/georgia-regular.eot");
+  src: local("'georgia-regular', sans-serif;"), url("/assets/font/georgia/regular/georgia-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/georgia/regular/georgia-regular.woff2") format("woff2"), url("/assets/font/georgia/regular/georgia-regular.woff") format("woff"), url("/assets/font/georgia/regular/georgia-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "'arial-regular', sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/arial/regular/arial-regular.eot");
+  src: local("'arial-regular', sans-serif"), url("/assets/font/arial/regular/arial-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/arial/regular/arial-regular.woff2") format("woff2"), url("/assets/font/arial/regular/arial-regular.woff") format("woff"), url("/assets/font/arial/regular/arial-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "'arial-italic', sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/arial/italic/arial-italic-regular.eot");
+  src: local("'arial-italic', sans-serif"), url("/assets/font/arial/italic/arial-italic-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/arial/italic/arial-italic-regular.woff2") format("woff2"), url("/assets/font/arial/italic/arial-italic-regular.woff") format("woff"), url("/assets/font/arial/italic/arial-italic-regular.ttf") format("truetype");
+}
+
+.about {
+  background: #fff;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 120px;
+  padding: 94px 0 114px 0;
+}
+
+.about__img {
+  width: 300px;
+  height: 408px;
+}
+
+.about__content {
+  width: 430px;
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.donation {
+  background: #F6F6F6;
+}
+
+.donation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 82px;
+}
+
+.donation__img {
+  height: 261px;
+  width: 505px;
+}
+
+.donation__content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 349px;
+  flex: 0 1 349px;
+}
+
+.donation__title {
+  margin-bottom: 20px;
+}
+
+.donation__subtitle {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.donation__credit-card {
+  margin-bottom: 20px;
+}
+
+.donation__description {
+  font: italic 400 12px/18px "arial-italic", sans-serif;
+  color: #B2B2B2;
+}
+
+.help {
+  background: #fff;
+}
+
+.help__container {
+  padding-top: 78px;
+  padding-bottom: 99px;
+}
+
+.help__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.help__goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 47px 119px;
+}
+
+.pets {
+  background: #F6F6F6;
+}
+
+.pets__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.pets__title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pets__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.promo {
+  background: -o-radial-gradient(0% 0%, 100% 215.42%, #5B483A 0%, #262425 100%);
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
+.promo__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.promo__content {
+  margin-top: 162px;
+  width: 460px;
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.promo__description {
+  margin-top: 42px;
+}
+
+.promo__button {
+  margin-top: 43px;
+}
+
+.promo__img {
+  width: 698px;
+  height: 728px;
+}
+
+@supports (-webkit-appearance:none) {
+
+}

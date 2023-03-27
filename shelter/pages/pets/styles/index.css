@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "'georgia-regular', sans-serif;";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/georgia/regular/georgia-regular.eot");
+  src: local("'georgia-regular', sans-serif;"), url("/assets/font/georgia/regular/georgia-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/georgia/regular/georgia-regular.woff2") format("woff2"), url("/assets/font/georgia/regular/georgia-regular.woff") format("woff"), url("/assets/font/georgia/regular/georgia-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "'arial-regular', sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/arial/regular/arial-regular.eot");
+  src: local("'arial-regular', sans-serif"), url("/assets/font/arial/regular/arial-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/arial/regular/arial-regular.woff2") format("woff2"), url("/assets/font/arial/regular/arial-regular.woff") format("woff"), url("/assets/font/arial/regular/arial-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "'arial-italic', sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/font/arial/italic/arial-italic-regular.eot");
+  src: local("'arial-italic', sans-serif"), url("/assets/font/arial/italic/arial-italic-regular.eot?#iefix") format("embedded-opentype"), url("/assets/font/arial/italic/arial-italic-regular.woff2") format("woff2"), url("/assets/font/arial/italic/arial-italic-regular.woff") format("woff"), url("/assets/font/arial/italic/arial-italic-regular.ttf") format("truetype");
+}
+
+.friends {
+  background: #F6F6F6;
+}
+
+.friends__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.friends__title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.friends__house {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  margin-bottom: 60px;
+}
+
+.friends__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+@supports (-webkit-appearance:none) {
+
+}
