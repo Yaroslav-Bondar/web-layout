@@ -11,6 +11,9 @@
     &_color_primary {
       color: $color-primary;
     }
+    &_color_dark-l {
+      color: $color-dark-l;
+    }
   }
   &__subtitle {
     @include font-arial-regular;
@@ -19,6 +22,9 @@
     letter-spacing: 0.1em;
     &_color_white {
       color: $color-white;
+    }
+    &_color_dark-3xl {
+      color: $color-dark-3xl;
     }
   }
 }

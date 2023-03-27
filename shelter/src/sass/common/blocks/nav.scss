@@ -29,6 +29,15 @@
         color: $color-light-s;
       }
     }
+    &_color_dark-l {
+      color: $color-dark-l;
+      &.nav__link_active {
+        color: $color-dark-3xl;
+      }
+      &:hover {
+        color: $color-dark-3xl;
+      }
+    }
     &_active::before {
       content: '';
       display: block;

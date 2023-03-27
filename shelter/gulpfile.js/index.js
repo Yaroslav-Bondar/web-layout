@@ -19,9 +19,12 @@ const task = requireDir('./task', {recurse: true});
 
 // observation task.html
 const watcherHtml = () => {
-    $.gulp.watch($.path.html.watch, task.html).on('all', $.browserSync.reload);
+    // $.gulp.watch($.path.html.watch, task.html).on('all', $.browserSync.reload);
+    $.gulp.watch($.path.html.watch, task.htmlTest).on('all', $.browserSync.reload);
+    
     // $.gulp.watch(path.css.$.gulp.watch, task.css).on('all', $.browserSync.reload);
-    $.gulp.watch($.path.sass.watch, task.sass).on('all', $.browserSync.reload);
+    // $.gulp.watch($.path.sass.watch, task.sass).on('all', $.browserSync.reload);
+    $.gulp.watch($.path.sass.watch, task.sassTest).on('all', $.browserSync.reload);
     $.gulp.watch($.path.js.watch, task.js).on('all', $.browserSync.reload);
     $.gulp.watch($.path.img.watch, task.img).on('all', $.browserSync.reload);
     $.gulp.watch($.path.font.watch, task.font).on('all', $.browserSync.reload);
@@ -39,7 +42,8 @@ const watcherPug = () => {
 }
 
 // production
-const build = $.gulp.series(task.clear, $.gulp.parallel(task.html, task.sass, task.normalize, task.js, task.img, task.font));
+// const build = $.gulp.series(task.clear, $.gulp.parallel(task.html, task.sass, task.normalize, task.js, task.img, task.font));
+const build = $.gulp.series(task.clear, $.gulp.parallel(task.htmlTest, task.sassTest, task.normalize, task.js, task.img, task.font));
 
 // develop   
 const devHtml = $.gulp.series(build, $.gulp.parallel(task.server, watcherHtml));
@@ -51,9 +55,11 @@ exports.pug = task.pug;
 exports.normalize = task.normalize;
 exports.css = task.css;
 exports.sass = task.sass;
+exports.sassTest = task.sassTest;
 exports.js = task.js;
 exports.img = task.img;
 exports.html = task.html;
+exports.htmlTest = task.htmlTest;
 exports.font = task.font;
 exports.build = build; 
 // assembly

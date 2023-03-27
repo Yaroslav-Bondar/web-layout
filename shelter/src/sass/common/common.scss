@@ -1,0 +1,16 @@
+// utils
+@use "sass:map";
+// settings
+@import "../_config/variables";
+@import '../_config/fonts-style';
+
+// mixins
+// @import '_mixins/media';
+@import '../_mixins/container';
+@import '../_mixins/alignment';
+
+// extends
+@import '../_extends/reset';
+// @import '../_imports/';
+
+@import 'blocks/*.*';
