@@ -11,7 +11,8 @@
     grid-template-areas: 'title-contact title-location'
                           'email marker-1'
                           'phone marker-2';
-    grid-template-columns:  283px 296px;
+    // grid-template-columns:  283px 296px;
+    grid-template-columns:  293px 296px;
     gap: 40px 161px;
     padding-bottom: 58px;
   }

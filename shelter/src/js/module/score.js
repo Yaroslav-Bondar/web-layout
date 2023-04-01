@@ -25,6 +25,7 @@ const pets = {
 };
 
 module.exports = () => {
+  console.log('*** Scores ***');
   console.log('Main page');
   console.table(main);
   console.log('Pets page');

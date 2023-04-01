@@ -17,7 +17,7 @@ $breakpoints: (
 ) !default;
 
 // font
-$font-family-base: 'Georgia';
+$font-family-base: 'georgia-regular', sans-serif;
 $font-size-base: 18px;
 $line-height-base: 1.75px;
 $font-weight-base: 400;
@@ -34,8 +34,6 @@ $color-dark-xl: #4C4C4C;
 $color-dark-3xl: #292929;
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
-
-// $color-black: #000;
 
 // background
 $autofill-bg-white: 0 0 0px 1000px $color-white inset;

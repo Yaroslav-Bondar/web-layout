@@ -4,10 +4,12 @@ const pathDest = './public';
 module.exports = {
     root: pathDest,
 
+    pages: ['main', 'pets'],
+
     html: {
-        src: pathSrc + '/html/*.html',
+        src: pathSrc + '/html/pages/',
         watch: pathSrc + '/html/**/*.html',
-        dest: pathDest,
+        dest: pathDest + '/pages/',
     },
 
     pug: {
@@ -29,9 +31,10 @@ module.exports = {
     },
 
     sass: {
-        src: pathSrc + '/sass/*.{sass,scss}',
+        src: pathSrc + '/sass/pages/',
         watch: pathSrc + '/sass/**/*.{sass,scss}',
-        dest: pathDest + '/css',
+        dest: pathDest + '/pages/',
+        // pages: ['main', 'pets'],
     },
 
     js: {

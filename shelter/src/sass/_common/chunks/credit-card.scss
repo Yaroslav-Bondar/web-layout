@@ -4,11 +4,11 @@
   border-radius: 9px;
   background-color: $color-primary;
   text-decoration: none;
-  background: 15px / 30px 23px no-repeat url('/assets/img/icons/credit-card.png'), $color-primary;
+  background: 15px / 30px 23px no-repeat url('../../../assets/img/icons/credit-card.png'), $color-primary;
   transition-property: opacity background-color;
   transition-duration: 0.2s;
   &:hover {
-    background: 15px / 30px 23px no-repeat url('/assets/img/icons/credit-card.png'), $color-primary-light;
+    background: 15px / 30px 23px no-repeat url('../../../assets/img/icons/credit-card.png'), $color-primary-light;
   }
   &:active {
     text-decoration: underline;

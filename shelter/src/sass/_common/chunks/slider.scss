@@ -13,16 +13,16 @@
   }
   &__btn_theme_normal-prev {
     left: 0;
-    background: center no-repeat url('/assets/img/icons/arrow-prev.png');
+    background: center no-repeat url('../../../assets/img/icons/arrow-prev.png');
     &:hover {
-      background: center no-repeat url('/assets/img/icons/arrow-prev.png') $color-primary-light;
+      background: center no-repeat url('../../../assets/img/icons/arrow-prev.png') $color-primary-light;
     }
   }
   &__btn_theme_normal-next {
     right: 0;
-    background: center no-repeat url('/assets/img/icons/arrow-next.png');
+    background: center no-repeat url('../../../assets/img/icons/arrow-next.png');
     &:hover {
-      background: center no-repeat url('/assets/img/icons/arrow-next.png') $color-primary-light;
+      background: center no-repeat url('../../../assets/img/icons/arrow-next.png') $color-primary-light;
     }
   }
   &__btn_theme_inactive-next {

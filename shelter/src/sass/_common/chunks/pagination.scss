@@ -1,0 +1,59 @@
+.pagination {
+  // &button:disabled {
+
+  // }
+  // &button {
+
+  // }
+  &__first {
+    &:disabled {
+      background: center no-repeat url(../../../assets/img/icons/double-prev-inactive.webp);
+    }
+  }
+  &__prev {
+    &:disabled {
+      background: center no-repeat url(../../../assets/img/icons/single-prev-inactive.webp);
+    }
+    &:not(:disabled) {
+      background: center no-repeat url(../../../assets/img/icons/single-prev-active.webp);
+      &:hover {
+        background: center no-repeat url(../../../assets/img/icons/single-prev-active.webp) $color-primary-light;
+      }
+    }
+  }
+  &__display {
+    @include flex-center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    @include font-georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    background-color: $color-primary;
+  }
+  &__next {
+    &:disabled {
+      background: center no-repeat url(../../../assets/img/icons/single-prev-inactive.webp);
+    }
+    &:not(:disabled) {
+      background: center no-repeat url(../../../assets/img/icons/single-next-active.webp);
+      &:hover {
+        background: center no-repeat url(../../../assets/img/icons/single-next-active.webp) $color-primary-light;
+      }
+    }
+  }
+  &__last {
+    &:disabled {
+      background: center no-repeat url(../../../assets/img/icons/double-prev-inactive.webp);
+    }
+    &:not(:disabled) {
+      background: center no-repeat url(../../../assets/img/icons/double-next-active.webp);
+      &:hover {
+        background: center no-repeat url(../../../assets/img/icons/double-next-active.webp) $color-primary-light;
+      }
+    }
+  }
+}
+
