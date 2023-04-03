@@ -1035,6 +1035,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 30px 40px;
   margin-bottom: 60px;
 }
@@ -1118,6 +1121,18 @@ body {
     display: block;
   }
 
+  .friends__container {
+    padding-bottom: 76px;
+  }
+
+  .friends__title {
+    margin-bottom: 30px;
+  }
+
+  .friends__house {
+    margin-bottom: 40px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -1148,6 +1163,22 @@ body {
   .footer__img {
     width: 260px;
     height: 269px;
+  }
+
+  .friends__container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .friends__title {
+    margin-bottom: 42px;
+    font-size: 25px;
+  }
+
+  .friends__pagination {
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
   }
 
 @supports (-webkit-appearance:none) {
