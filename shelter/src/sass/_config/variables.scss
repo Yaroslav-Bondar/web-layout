@@ -8,8 +8,8 @@ $container-padding: 15px;
 
 // check points
 $breakpoints: (
-    xs: 375, 
-    sm: 576,
+    xs: 320px, 
+    sm: 450px,
     md: 768px, 
     lg: 992px, // tablet
     xl: 1200px,
@@ -27,6 +27,7 @@ $font-style-base: normal;
 $color-primary: #F1CDB3;
 $color-primary-light: #FDDCC4;
 $color-white: #fff;
+$color-black: #000000;
 $color-dark-s: #CDCDCD;
 $color-dark-m: #B2B2B2;
 $color-dark-l: #545454;

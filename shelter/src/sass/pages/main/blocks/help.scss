@@ -1,16 +1,32 @@
+@use 'sass:map';
+
 .help {
   background-color: $color-white;
   &__container {
     padding-top: 78px;
     padding-bottom: 99px;
+    @media (max-width: map.get($breakpoints, 'sm')) {
+      padding-top: 42px;
+      padding-bottom: 42px;
+    }
   }
   &__title {
     margin-bottom: 60px;
-    text-align: center
+    text-align: center;
+    @media (max-width: map.get($breakpoints, 'sm')) {
+      margin-bottom: 42px;
+      font-size: 25px;
+    }
   }
   &__goods {
     @include flex-center-h;
     flex-wrap: wrap;
     gap: 47px 119px;
+    &-title {
+      @media (max-width: map.get($breakpoints, 'xs')) {
+        margin-top: 20px;
+        font-size: 15px;
+      }
+    }
   }
 }

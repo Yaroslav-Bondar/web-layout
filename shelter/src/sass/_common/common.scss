@@ -12,7 +12,9 @@
 // @import '../_imports/';
 
 @import 
+  'chunks/normalize',
   'chunks/btn',
+  'chunks/burger',
   'chunks/button',
   'chunks/card',
   'chunks/chunks',
@@ -26,5 +28,4 @@
   'chunks/nav',
   'chunks/pagination',
   'chunks/slider',
-  'chunks/title',
-  'chunks/normalize.css';
+  'chunks/title';

@@ -1,8 +1,15 @@
 .slider {
   position: relative;
+  @include flex-center-v;
+  // justify-content: space-between;
+  // justify-content: center;
+  flex-flow: column;
   &__container {
     @include flex-center-h;
-    column-gap: 90px;
+    // column-gap: 90px;
+    // max-width: 990px;
+    // width: 82.5%;
+    justify-content: space-between;
   }
   &__item {
   }
@@ -13,6 +20,7 @@
   }
   &__btn_theme_normal-prev {
     left: 0;
+    // margin-right: 12px;
     background: center no-repeat url('../../../assets/img/icons/arrow-prev.png');
     &:hover {
       background: center no-repeat url('../../../assets/img/icons/arrow-prev.png') $color-primary-light;
@@ -20,6 +28,7 @@
   }
   &__btn_theme_normal-next {
     right: 0;
+    // margin-left: 12px;
     background: center no-repeat url('../../../assets/img/icons/arrow-next.png');
     &:hover {
       background: center no-repeat url('../../../assets/img/icons/arrow-next.png') $color-primary-light;
