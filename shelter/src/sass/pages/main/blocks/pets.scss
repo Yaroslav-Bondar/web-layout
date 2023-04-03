@@ -1,15 +1,67 @@
+@use 'sass:map';
+
 .pets {
   background-color: $color-light-l;
   &__container {
     padding-top: 80px;
     padding-bottom: 100px;
+    @media (max-width: map.get($breakpoints, 'sm')) {
+      padding-top: 42px;
+      padding-bottom: 42px;
+    }
   }
   &__title {
     margin-bottom: 60px;
     text-align: center;
+    @media (max-width: map.get($breakpoints, 'sm')) {
+      margin-bottom: 8px;
+      font-size: 25px;
+    }
+  }
+  &__slider {
+    &-container {
+      width: 82.5%;
+      overflow: hidden;
+      @media (max-width: 1108px) {
+        width: 64.5%;      
+      }
+      @media (max-width: 952px) {
+        width: 72.5%;      
+      }
+      @media (max-width: 854px) {
+        width: 82%;      
+      }
+      @media (max-width: 760px) {
+        width: 270px;
+      }
+    }
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 500px) {
+        width: 184px;
+        margin-top: 20px;
+      }
+    }
+    &-btn {
+      @media (max-width: 500px) {
+        position: static;
+        transform: translateY(0);
+      }  
+    }
+    &-item {
+      &:last-child {
+        @media (max-width: 1108px) {
+          display: none
+        }
+      }
+    }
   }
   &__button {
     @include flex-center-h;
     margin-top: 60px;
+    @media (max-width: map.get($breakpoints, 'sm')) {
+      margin-top: 42px;
+    }
   }
 }

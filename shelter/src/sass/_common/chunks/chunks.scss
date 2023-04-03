@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,4 +17,12 @@ body {
 }
 .container {
   @include container;
+  @media (max-width: map.get($breakpoints, 'md')) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: map.get($breakpoints, 'sm')) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

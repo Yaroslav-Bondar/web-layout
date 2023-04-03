@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 .header {
     &_theme_light {
         background-color: $color-white;
@@ -7,5 +9,16 @@
         justify-content: space-between;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+    &__nav {
+        @media (max-width: map.get($breakpoints, 'md')) {
+            display: none;
+        }
+    }
+    &__burger {
+        display: none;
+        @media (max-width: map.get($breakpoints, 'md')) {
+            display: block;    
+        }
     }
 }
