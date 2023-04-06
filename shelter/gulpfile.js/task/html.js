@@ -1,6 +1,6 @@
 const merge = require('merge-stream');
 
-const htmlTest = () => {
+const html = () => {
     var tasks = $.path.pages.map(page => {
         return $.gulp.src($.path.html.src + page + '/*.html')
             .pipe($.gp.fileInclude())
@@ -21,4 +21,4 @@ const htmlTest = () => {
     return merge(tasks);
 };
 
-module.exports = htmlTest;
+module.exports = html;

@@ -18,12 +18,6 @@ module.exports = {
         dest: pathDest,
     },
 
-    normalize: {
-        src: pathSrc + '/css/normalize/{normalize,reset}.css',
-        watch: pathSrc + '/css/normalize/{normalize,reset}.css',
-        dest: pathDest + '/css/normalize',
-    },
-
     css: {
         src: pathSrc + '/css/*.css',
         watch: pathSrc + '/css/**/*.css',
@@ -34,7 +28,6 @@ module.exports = {
         src: pathSrc + '/sass/pages/',
         watch: pathSrc + '/sass/**/*.{sass,scss}',
         dest: pathDest + '/pages/',
-        // pages: ['main', 'pets'],
     },
 
     js: {
