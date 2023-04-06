@@ -1,0 +1,31 @@
+// settings
+@import 
+  "../../abstracts/_config/variables",
+  '../../abstracts/_config/fonts',
+  '../../abstracts/_config/fonts-style';
+
+// mixins
+@import 
+  '../../abstracts/_mixins/media',
+  '../../abstracts/_mixins/container',
+  '../../abstracts/_mixins/alignment';
+
+
+// extends
+@import 
+  '../../abstracts/_extends/img',
+  '../../abstracts/_extends/reset';
+
+  // base
+@import '../../base/normalize.scss';
+
+// components
+@import '../../components';
+
+// layout
+@import 
+  '../../layout/_header',
+  '../../layout/_footer';
+
+// sections
+@import 'layout/*.scss';

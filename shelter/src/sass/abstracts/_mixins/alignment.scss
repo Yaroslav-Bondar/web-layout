@@ -1,0 +1,18 @@
+// vertical alignment center
+@mixin flex-center-v {
+    display: flex;
+    align-items: center;
+}
+// horizontal alignment center
+@mixin flex-center-h {
+    display: flex;
+    justify-content: center;
+}
+
+// center alignment
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

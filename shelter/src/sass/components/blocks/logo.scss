@@ -1,0 +1,30 @@
+.logo {
+  &__container {
+    text-decoration: none;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    &_color_primary {
+      color: $color-primary;
+    }
+    &_color_dark-l {
+      color: $color-dark-l;
+    }
+  }
+  &__subtitle {
+    @include font-arial-regular;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    &_color_white {
+      color: $color-white;
+    }
+    &_color_dark-3xl {
+      color: $color-dark-3xl;
+    }
+  }
+}

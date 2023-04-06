@@ -1,0 +1,13 @@
+.title {
+  @include font-georgia-regular;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  &_color_dark-l {
+    color: $color-dark-l;
+  }
+  &_color_white {
+    color: $color-white;
+  }
+}

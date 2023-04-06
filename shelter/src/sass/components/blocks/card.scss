@@ -1,0 +1,32 @@
+
+.card {
+  width: 270px;
+  height: 435px;
+  text-align: center;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  transition-property: opacity transform;
+  transition-duration: .3s;
+  cursor: pointer;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: translateY(-10px) scale(1.07);
+  }
+  &__img {
+  }
+  &__img-item {
+  }
+  &__title {
+    margin-top: 23px;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+  }
+  &__button {
+    margin-top: 29px;
+  }
+}
+
