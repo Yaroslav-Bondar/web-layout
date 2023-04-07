@@ -1,0 +1,61 @@
+@use 'sass:map';
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px;
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+  z-index: 2;
+  &_active {
+    transform: translateX(0);
+    @media (min-width: map.get($breakpoints, 'md')) {
+      transform: translateX(100%);
+    }
+  }
+  &__list {
+    @include flex-center;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    background-color: $color-dark-3xl;
+    list-style-type: none;
+    overflow: auto;
+    text-align: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__link {
+    @include font-arial-regular;
+    font-size: 32px;
+    line-height: 160%;
+    color: $color-dark-s;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .2s;
+    &:hover {
+      color: $color-light-s;
+    }
+    &_active {
+      position: relative;
+      color: $color-light-s;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 1.5em;
+        width: 100%;
+        height: 3px;
+        background-color: $color-primary;
+      }
+    }
+  }
+}

@@ -12,6 +12,9 @@ body {
   font-style: $font-style-base;
   font-weight: $font-weight-base;
 }
+body._lock {
+  overflow: hidden;
+}
 .wrapper {
   @include wrapper;
 }

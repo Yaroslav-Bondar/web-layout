@@ -37,7 +37,6 @@ const watcherPug = () => {
 }
 
 // production
-// const build = $.gulp.series(task.clear, $.gulp.parallel(task.html, task.sass, task.normalize, task.js, task.img, task.font));
 const build = $.gulp.series(task.clear, $.gulp.parallel(task.html, task.sass, task.js, task.img, task.font));
 
 // develop   

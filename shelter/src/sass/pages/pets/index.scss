@@ -20,7 +20,10 @@
 @import '../../base/normalize.scss';
 
 // components
-@import '../../components';
+@import '../../components',
+        '../../components/_mobile-menu',
+        '../../components/_mobile-background',
+        '../../components/_burger';
 
 // layout
 @import 

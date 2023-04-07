@@ -32,8 +32,10 @@ module.exports = {
 
     js: {
         src: pathSrc + '/js/*.js',
+        srcPages: pathSrc + '/js/pages/',
         watch: pathSrc + '/js/**/*.js',
         dest: pathDest + '/js',
+        destPages: pathDest + '/pages/',
     },
 
     img: {

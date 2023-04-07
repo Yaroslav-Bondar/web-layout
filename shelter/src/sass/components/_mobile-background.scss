@@ -1,0 +1,18 @@
+@use 'sass:map';
+
+.mobile-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-transparent-black;
+  z-index: 1;
+  &_active {
+    display: block;
+    @media (min-width: map.get($breakpoints, 'md')) {
+      display: none;
+    }
+  }
+}
