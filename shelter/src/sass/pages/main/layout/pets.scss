@@ -1,5 +1,7 @@
 @use 'sass:map';
 
+$slides-gap: 6%;
+
 .pets {
   background-color: $color-light-l;
   &__container {
@@ -19,21 +21,16 @@
     }
   }
   &__slider {
+    width: 82.5%;
+    margin: 0 auto;
+    @media (max-width: 742px) {
+      width: 270px;
+    }
     &-container {
-      width: 82.5%;
-      overflow: hidden;
-      @media (max-width: 1108px) {
-        width: 64.5%;      
-      }
-      @media (max-width: 952px) {
-        width: 72.5%;      
-      }
-      @media (max-width: 854px) {
-        width: 82%;      
-      }
-      @media (max-width: 760px) {
-        width: 270px;
-      }
+      display: grid;
+      grid-template-columns: 100% 100% 100%;
+      transform: translateX(-100% - $slides-gap);
+      grid-column-gap: $slides-gap;
     }
     &-btns {
       display: flex;
@@ -41,6 +38,8 @@
       @media (max-width: 500px) {
         width: 184px;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     &-btn {
@@ -50,9 +49,32 @@
       }  
     }
     &-item {
-      &:last-child {
-        @media (max-width: 1108px) {
-          display: none
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      &_transition_right {
+        animation-name: move-right;
+        animation-duration: 2s;
+      }
+      &_transition_left {
+        animation-name: move-left;
+        animation-duration: 2s;
+      }
+      @media (max-width: 1068px) {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+      }
+      @media (max-width: map.get($breakpoints, 'md')) {
+        justify-content: space-between;
+      }
+      & .card:last-child {
+        @media (max-width: 1068px) {
+          display: none;
+        }
+      }
+      & .card:nth-child(2) {
+        @media (max-width: 742px) {
+          display: none;
         }
       }
     }
@@ -64,4 +86,13 @@
       margin-top: 42px;
     }
   }
+}
+ 
+@keyframes move-right {
+  from {transform: translateX(-100% - $slides-gap);}
+  to {transform: translateX(-200% - $slides-gap * 2);}
+}
+@keyframes move-left {
+  from {transform: translateX(-100% - $slides-gap);}
+  to {transform: translateX(0%);}
 }
