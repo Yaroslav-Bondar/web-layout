@@ -1,0 +1,86 @@
+.complete-card {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  grid-column-gap: 30px;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 9px;
+  background-color: $color-white;
+  &:hover {
+    box-shadow: $box-shadow-card-hover;
+  }
+  &__img {
+    max-width: 500px;
+  }
+  &__img-item {
+    @extend %img;
+    object-fit: cover;
+  }
+  &__data {
+    padding: 50px 12px 0 0;
+  }
+  &__name {
+    margin-bottom: 12px;
+  }
+  &__who {
+    display: flex;
+    @include font-georgia-regular;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-black;
+  }
+  &__type {
+  }
+  &__separator {
+    margin: 0 3px 3px;
+  }
+  &__breed {
+  }
+  &__description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &__description-item {
+    @include font-georgia-regular;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-black;
+  }
+  &__info {
+  }
+  &__field {
+    position: relative;
+    padding-left: 14px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $color-primary;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__key {
+    @include font-georgia-bold;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-black;
+  }
+  &__value {
+    @include font-georgia-regular;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-black;
+  }
+}

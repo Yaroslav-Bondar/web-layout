@@ -36,7 +36,6 @@ const addSliderBtnHandlers = () => {
 };
 
 function carousel (animationEvent) {
-  console.log('start animation')
   let changedItem;
   if (animationEvent.animationName === "move-left") {
     SLIDER.classList.remove("pets__slider-item_transition_left");

@@ -2,5 +2,6 @@
 
 // connecting fonts
 @include font-face("'georgia-regular', sans-serif;", '../../../assets/font/georgia/regular/georgia-regular', 400);
-@include font-face("'arial-regular', sans-serif", '../../../assets/font/arial/regular/arial-regular', 400);
-@include font-face("'arial-italic', sans-serif", '../../../assets/font/arial/italic/arial-italic-regular', 400);
+@include font-face("'georgia-bold', sans-serif;", '../../../assets/font/georgia/bold/georgia-bold', 700);
+@include font-face("'arial-regular', sans-serif;", '../../../assets/font/arial/regular/arial-regular', 400);
+@include font-face("'arial-italic', sans-serif;", '../../../assets/font/arial/italic/arial-italic-regular', 400);

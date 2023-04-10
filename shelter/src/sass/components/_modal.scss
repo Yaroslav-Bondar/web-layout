@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include flex-center;
+  background-color: $color-transparent-black;
+  z-index: 10;
+  &__container {
+    position: relative;
+  }
+  &__close {
+    position: absolute;
+    right: -42px;
+    top: -52px;
+    font-size: 19px;
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+}

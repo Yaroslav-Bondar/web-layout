@@ -1,31 +1,9 @@
 .slider {
   position: relative;
-  // @include flex-center-v;
-  // justify-content: space-between;
-  // justify-content: center;
   overflow: hidden;
-  // flex-flow: column;
   &__container {
-    // display: flex;
-    // justify-content: space-between;
-    // position: relative;
-    // left: -640px;
-    // @include flex-center-h;
-    // column-gap: 90px;
-    // max-width: 990px;
-    // width: 82.5%;
-    // justify-content: space-between;
-    // &_transition_right {
-    //   animation-name: move-right;
-    //   animation-duration: 5s;
-    // }
-    // &_transition_left {
-    //   animation-name: move-left;
-    //   animation-duration: 5s;
-    // }
   }
   &__item {
-    // @include flex-center-h;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -40,7 +18,6 @@
   }
   &__btn_theme_normal-prev {
     left: 0;
-    // margin-right: 12px;
     background: center no-repeat url('../../../assets/img/icons/arrow-prev.png');
     &:hover {
       background: center no-repeat url('../../../assets/img/icons/arrow-prev.png') $color-primary-light;
@@ -48,22 +25,12 @@
   }
   &__btn_theme_normal-next {
     right: 0;
-    // margin-left: 12px;
     background: center no-repeat url('../../../assets/img/icons/arrow-next.png');
     &:hover {
       background: center no-repeat url('../../../assets/img/icons/arrow-next.png') $color-primary-light;
     }
   }
   &__btn_theme_inactive-next {
-
   }
-  // @keyframes move-right {
-  //   from {left: -640px;}
-  //   to {left: -1280px;}
-  // }
-  // @keyframes move-left {
-  //   from {left: -640px;}
-  //   to {left: 0px;}
-  // }
 }
 
