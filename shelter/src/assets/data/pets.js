@@ -1,5 +1,3 @@
-// const uid = require('../services/uid.js')
-
 const pets = [
     {
       id: 0,
